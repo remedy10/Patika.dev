@@ -1,0 +1,12 @@
+Projede o kadar gereksiz kod kalabağı yaptım ki başım ağrıdı,kendimden utandım.(03-03-2022)
+Yine contactApp'de olduğu gibi bestcase olarak çalışacaktır.
+Kart bulma methodunu çok kullandım onu bir sınıfta yazabilirdim 
+kartı bulup card olarak döndürüp yine sil,güncelle gibi sınıflara parametre olarak veririp-
+ işi bitirebilirdin.
+CARDS.CS'DEKİ NOTUN
+                   Aklıma şey geldi şimdi 1 tane board var.şimdi boards sınıfı oluşturup  
+                   buna bağlayıp takım sınıfına da boards tipinde parametre verip takım 
+                   özelimde board board içinde todo,doing,done card listesi yapılablir.
+
+VELHASILI KELAM DAHA EFEKTİF VE ETKİN BİÇİMDE YAPILABİLİRDİ AMA JETON KÖŞELİ MORUK NE YAPARSIN.
+BU İKİ PROJEYİ İLERİDE TEKRAR REVİZE EDİLEBİLİR BİR PROJE OLARAK BIRAKIYORUM.(03-03-2022)

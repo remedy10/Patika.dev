@@ -1,0 +1,15 @@
+C:\Users\serif\documents\Github\TelefonDefteri\bin\Debug\net6.0\TelefonDefteri.exe
+C:\Users\serif\documents\Github\TelefonDefteri\bin\Debug\net6.0\TelefonDefteri.deps.json
+C:\Users\serif\documents\Github\TelefonDefteri\bin\Debug\net6.0\TelefonDefteri.runtimeconfig.json
+C:\Users\serif\documents\Github\TelefonDefteri\bin\Debug\net6.0\TelefonDefteri.dll
+C:\Users\serif\documents\Github\TelefonDefteri\bin\Debug\net6.0\TelefonDefteri.pdb
+C:\Users\serif\documents\Github\TelefonDefteri\obj\Debug\net6.0\TelefonDefteri.csproj.AssemblyReference.cache
+C:\Users\serif\documents\Github\TelefonDefteri\obj\Debug\net6.0\TelefonDefteri.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\serif\documents\Github\TelefonDefteri\obj\Debug\net6.0\TelefonDefteri.AssemblyInfoInputs.cache
+C:\Users\serif\documents\Github\TelefonDefteri\obj\Debug\net6.0\TelefonDefteri.AssemblyInfo.cs
+C:\Users\serif\documents\Github\TelefonDefteri\obj\Debug\net6.0\TelefonDefteri.csproj.CoreCompileInputs.cache
+C:\Users\serif\documents\Github\TelefonDefteri\obj\Debug\net6.0\TelefonDefteri.dll
+C:\Users\serif\documents\Github\TelefonDefteri\obj\Debug\net6.0\refint\TelefonDefteri.dll
+C:\Users\serif\documents\Github\TelefonDefteri\obj\Debug\net6.0\TelefonDefteri.pdb
+C:\Users\serif\documents\Github\TelefonDefteri\obj\Debug\net6.0\TelefonDefteri.genruntimeconfig.cache
+C:\Users\serif\documents\Github\TelefonDefteri\obj\Debug\net6.0\ref\TelefonDefteri.dll

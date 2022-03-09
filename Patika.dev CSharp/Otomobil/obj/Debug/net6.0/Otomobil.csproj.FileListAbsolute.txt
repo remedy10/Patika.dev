@@ -1,0 +1,15 @@
+C:\Users\serif\Documents\GitHub\Otomobil\obj\Debug\net6.0\Otomobil.csproj.AssemblyReference.cache
+C:\Users\serif\Documents\GitHub\Otomobil\obj\Debug\net6.0\Otomobil.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\serif\Documents\GitHub\Otomobil\obj\Debug\net6.0\Otomobil.AssemblyInfoInputs.cache
+C:\Users\serif\Documents\GitHub\Otomobil\obj\Debug\net6.0\Otomobil.AssemblyInfo.cs
+C:\Users\serif\Documents\GitHub\Otomobil\obj\Debug\net6.0\Otomobil.csproj.CoreCompileInputs.cache
+C:\Users\serif\Documents\GitHub\Otomobil\bin\Debug\net6.0\Otomobil.exe
+C:\Users\serif\Documents\GitHub\Otomobil\bin\Debug\net6.0\Otomobil.deps.json
+C:\Users\serif\Documents\GitHub\Otomobil\bin\Debug\net6.0\Otomobil.runtimeconfig.json
+C:\Users\serif\Documents\GitHub\Otomobil\bin\Debug\net6.0\Otomobil.dll
+C:\Users\serif\Documents\GitHub\Otomobil\bin\Debug\net6.0\Otomobil.pdb
+C:\Users\serif\Documents\GitHub\Otomobil\obj\Debug\net6.0\Otomobil.dll
+C:\Users\serif\Documents\GitHub\Otomobil\obj\Debug\net6.0\refint\Otomobil.dll
+C:\Users\serif\Documents\GitHub\Otomobil\obj\Debug\net6.0\Otomobil.pdb
+C:\Users\serif\Documents\GitHub\Otomobil\obj\Debug\net6.0\Otomobil.genruntimeconfig.cache
+C:\Users\serif\Documents\GitHub\Otomobil\obj\Debug\net6.0\ref\Otomobil.dll

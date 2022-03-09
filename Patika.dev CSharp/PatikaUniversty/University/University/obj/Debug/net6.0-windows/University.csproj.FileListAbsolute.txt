@@ -1,0 +1,17 @@
+C:\Users\serif\Documents\GitHub\PatikaUniversty\University\University\bin\Debug\net6.0-windows\University.exe
+C:\Users\serif\Documents\GitHub\PatikaUniversty\University\University\bin\Debug\net6.0-windows\University.deps.json
+C:\Users\serif\Documents\GitHub\PatikaUniversty\University\University\bin\Debug\net6.0-windows\University.runtimeconfig.json
+C:\Users\serif\Documents\GitHub\PatikaUniversty\University\University\bin\Debug\net6.0-windows\University.dll
+C:\Users\serif\Documents\GitHub\PatikaUniversty\University\University\bin\Debug\net6.0-windows\University.pdb
+C:\Users\serif\Documents\GitHub\PatikaUniversty\University\University\obj\Debug\net6.0-windows\University.csproj.AssemblyReference.cache
+C:\Users\serif\Documents\GitHub\PatikaUniversty\University\University\obj\Debug\net6.0-windows\University.mainMenu.resources
+C:\Users\serif\Documents\GitHub\PatikaUniversty\University\University\obj\Debug\net6.0-windows\University.csproj.GenerateResource.cache
+C:\Users\serif\Documents\GitHub\PatikaUniversty\University\University\obj\Debug\net6.0-windows\University.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\serif\Documents\GitHub\PatikaUniversty\University\University\obj\Debug\net6.0-windows\University.AssemblyInfoInputs.cache
+C:\Users\serif\Documents\GitHub\PatikaUniversty\University\University\obj\Debug\net6.0-windows\University.AssemblyInfo.cs
+C:\Users\serif\Documents\GitHub\PatikaUniversty\University\University\obj\Debug\net6.0-windows\University.csproj.CoreCompileInputs.cache
+C:\Users\serif\Documents\GitHub\PatikaUniversty\University\University\obj\Debug\net6.0-windows\University.dll
+C:\Users\serif\Documents\GitHub\PatikaUniversty\University\University\obj\Debug\net6.0-windows\refint\University.dll
+C:\Users\serif\Documents\GitHub\PatikaUniversty\University\University\obj\Debug\net6.0-windows\University.pdb
+C:\Users\serif\Documents\GitHub\PatikaUniversty\University\University\obj\Debug\net6.0-windows\University.genruntimeconfig.cache
+C:\Users\serif\Documents\GitHub\PatikaUniversty\University\University\obj\Debug\net6.0-windows\ref\University.dll

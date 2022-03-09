@@ -1,0 +1,15 @@
+C:\Users\serif\Documents\GitHub\Methot-Collections\bin\Debug\net6.0\Methot-Collections.exe
+C:\Users\serif\Documents\GitHub\Methot-Collections\bin\Debug\net6.0\Methot-Collections.deps.json
+C:\Users\serif\Documents\GitHub\Methot-Collections\bin\Debug\net6.0\Methot-Collections.runtimeconfig.json
+C:\Users\serif\Documents\GitHub\Methot-Collections\bin\Debug\net6.0\Methot-Collections.dll
+C:\Users\serif\Documents\GitHub\Methot-Collections\bin\Debug\net6.0\Methot-Collections.pdb
+C:\Users\serif\Documents\GitHub\Methot-Collections\obj\Debug\net6.0\Methot-Collections.csproj.AssemblyReference.cache
+C:\Users\serif\Documents\GitHub\Methot-Collections\obj\Debug\net6.0\Methot-Collections.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\serif\Documents\GitHub\Methot-Collections\obj\Debug\net6.0\Methot-Collections.AssemblyInfoInputs.cache
+C:\Users\serif\Documents\GitHub\Methot-Collections\obj\Debug\net6.0\Methot-Collections.AssemblyInfo.cs
+C:\Users\serif\Documents\GitHub\Methot-Collections\obj\Debug\net6.0\Methot-Collections.csproj.CoreCompileInputs.cache
+C:\Users\serif\Documents\GitHub\Methot-Collections\obj\Debug\net6.0\Methot-Collections.dll
+C:\Users\serif\Documents\GitHub\Methot-Collections\obj\Debug\net6.0\refint\Methot-Collections.dll
+C:\Users\serif\Documents\GitHub\Methot-Collections\obj\Debug\net6.0\Methot-Collections.pdb
+C:\Users\serif\Documents\GitHub\Methot-Collections\obj\Debug\net6.0\Methot-Collections.genruntimeconfig.cache
+C:\Users\serif\Documents\GitHub\Methot-Collections\obj\Debug\net6.0\ref\Methot-Collections.dll

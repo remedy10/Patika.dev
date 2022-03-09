@@ -1,0 +1,15 @@
+C:\Users\serif\Documents\GitHub\SınıfveOOP\bin\Debug\net6.0\SınıfveOOP.exe
+C:\Users\serif\Documents\GitHub\SınıfveOOP\bin\Debug\net6.0\SınıfveOOP.deps.json
+C:\Users\serif\Documents\GitHub\SınıfveOOP\bin\Debug\net6.0\SınıfveOOP.runtimeconfig.json
+C:\Users\serif\Documents\GitHub\SınıfveOOP\bin\Debug\net6.0\SınıfveOOP.dll
+C:\Users\serif\Documents\GitHub\SınıfveOOP\bin\Debug\net6.0\SınıfveOOP.pdb
+C:\Users\serif\Documents\GitHub\SınıfveOOP\obj\Debug\net6.0\SınıfveOOP.csproj.AssemblyReference.cache
+C:\Users\serif\Documents\GitHub\SınıfveOOP\obj\Debug\net6.0\SınıfveOOP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\serif\Documents\GitHub\SınıfveOOP\obj\Debug\net6.0\SınıfveOOP.AssemblyInfoInputs.cache
+C:\Users\serif\Documents\GitHub\SınıfveOOP\obj\Debug\net6.0\SınıfveOOP.AssemblyInfo.cs
+C:\Users\serif\Documents\GitHub\SınıfveOOP\obj\Debug\net6.0\SınıfveOOP.csproj.CoreCompileInputs.cache
+C:\Users\serif\Documents\GitHub\SınıfveOOP\obj\Debug\net6.0\SınıfveOOP.dll
+C:\Users\serif\Documents\GitHub\SınıfveOOP\obj\Debug\net6.0\refint\SınıfveOOP.dll
+C:\Users\serif\Documents\GitHub\SınıfveOOP\obj\Debug\net6.0\SınıfveOOP.pdb
+C:\Users\serif\Documents\GitHub\SınıfveOOP\obj\Debug\net6.0\SınıfveOOP.genruntimeconfig.cache
+C:\Users\serif\Documents\GitHub\SınıfveOOP\obj\Debug\net6.0\ref\SınıfveOOP.dll

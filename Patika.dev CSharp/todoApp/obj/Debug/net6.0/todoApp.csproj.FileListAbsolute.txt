@@ -1,0 +1,15 @@
+C:\Users\serif\Documents\GitHub\todoApp\bin\Debug\net6.0\todoApp.exe
+C:\Users\serif\Documents\GitHub\todoApp\bin\Debug\net6.0\todoApp.deps.json
+C:\Users\serif\Documents\GitHub\todoApp\bin\Debug\net6.0\todoApp.runtimeconfig.json
+C:\Users\serif\Documents\GitHub\todoApp\bin\Debug\net6.0\todoApp.dll
+C:\Users\serif\Documents\GitHub\todoApp\bin\Debug\net6.0\todoApp.pdb
+C:\Users\serif\Documents\GitHub\todoApp\obj\Debug\net6.0\todoApp.csproj.AssemblyReference.cache
+C:\Users\serif\Documents\GitHub\todoApp\obj\Debug\net6.0\todoApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\serif\Documents\GitHub\todoApp\obj\Debug\net6.0\todoApp.AssemblyInfoInputs.cache
+C:\Users\serif\Documents\GitHub\todoApp\obj\Debug\net6.0\todoApp.AssemblyInfo.cs
+C:\Users\serif\Documents\GitHub\todoApp\obj\Debug\net6.0\todoApp.csproj.CoreCompileInputs.cache
+C:\Users\serif\Documents\GitHub\todoApp\obj\Debug\net6.0\todoApp.dll
+C:\Users\serif\Documents\GitHub\todoApp\obj\Debug\net6.0\refint\todoApp.dll
+C:\Users\serif\Documents\GitHub\todoApp\obj\Debug\net6.0\todoApp.pdb
+C:\Users\serif\Documents\GitHub\todoApp\obj\Debug\net6.0\todoApp.genruntimeconfig.cache
+C:\Users\serif\Documents\GitHub\todoApp\obj\Debug\net6.0\ref\todoApp.dll
