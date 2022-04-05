@@ -1,8 +1,13 @@
+using FluentValidation;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
+using webapi.Services;
 using webAPI.DBOperations;
+using webAPI.Models.CreateBook;
+using webAPI.Models.DeleteBook;
 using webAPI.Models.GetBooks;
-using webAPI.ViewModels.GetBooks;
-using static webAPI.ViewModels.GetBooks.CreateBook;
+using webAPI.Models.UpdateBook;
+using static webAPI.Models.CreateBook.CreateBook;
 
 namespace webAPI.Controllers
 {
@@ -11,7 +16,7 @@ namespace webAPI.Controllers
     public class BookController : ControllerBase
     {
         private readonly BookStoreDbContext _context;
-
+        
         public BookController(BookStoreDbContext context) //dependency injection ıoc containerden context'i istiyoruz.
         {
             _context = context;
@@ -32,15 +37,8 @@ namespace webAPI.Controllers
         public IActionResult getById(int id)
         {
             getBookById getBookById = new(_context);
-            try
-            {
-                var book = getBookById.Handle(id);
-                return Ok(book);
-            }
-            catch (System.Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            var book = getBookById.Handle(id);
+            return Ok(book);
         }
         #endregion
 
@@ -49,33 +47,26 @@ namespace webAPI.Controllers
         public IActionResult addBook([FromBody] CreateModel newBook)
         {
             CreateBook createBook = new(_context);
-            try
-            {
-                createBook.MyCreateModel = newBook;
-                createBook.Handle();
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
+            createBook.MyCreateModel = newBook;
+            CreateBookValidator addValidator = new();
+            addValidator.ValidateAndThrow(createBook);
+            createBook.Handle();
+            //! ValidateAndThrow hem doğrular ve hata oluşması durumdan hatayı fırlatır. sadece validate kullanmak
+            //! iyi olmaz.
+            //? Artık bütün exceptionlarımız tek yerden geliyor.
             return Ok();
         }
         #endregion
 
         #region PUT
         [HttpPut("{id}")]
-        public IActionResult updateBook(int id, [FromBody] Book upBook)
+        public IActionResult updateBook(int id, [FromBody] UpdateBook.UpdateModel upBook)
         {
-            var book = _context.Books.SingleOrDefault(x => x.bookId == id);
-            if (book == null)
-                return BadRequest();
-            book.bookId = upBook.bookId != default ? upBook.bookId : book.bookId;
-            //ternary if şeklinde diyoruz ki , gelen değer default değilse(yani boş değilse) gelen değeri book id olarak ata
-            // eğer boşşa kendi değerini kullan diyoruz
-            book.bookPage = upBook.bookPage != default ? upBook.bookPage : book.bookPage;
-            book.bookRelase = upBook.bookRelase != default ? upBook.bookRelase : book.bookRelase;
-            book.bookTitle = upBook.bookTitle != default ? upBook.bookTitle : book.bookTitle;
-            _context.SaveChanges();
+            UpdateBookValidator updateValidator = new();
+            UpdateBook updateBook = new(_context);
+            updateBook.MyModel = upBook;
+            updateValidator.ValidateAndThrow(updateBook);
+            updateBook.Handle(id);
             return Ok();
         }
 
@@ -85,11 +76,10 @@ namespace webAPI.Controllers
         [HttpDelete("{id}")]
         public IActionResult deleteBook(int id)
         {
-            var book = _context.Books.SingleOrDefault(x => x.bookId == id);
-            if (book == null)
-                return BadRequest();
-            _context.Books.Remove(book);
-            _context.SaveChanges();
+            DeleteBook delete = new(_context);
+            //DeleteBookValidator deleteValidator = new();
+            delete.Handle(id);
+            //deleteValidator.ValidateAndThrow(delete);
             return Ok();
         }
         #endregion

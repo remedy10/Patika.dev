@@ -1,6 +1,6 @@
 using webAPI.DBOperations;
 
-namespace webAPI.ViewModels.GetBooks
+namespace webAPI.Models.CreateBook
 {
     public class CreateBook
     {
@@ -19,6 +19,8 @@ namespace webAPI.ViewModels.GetBooks
             ); //yeni eklediğimiz kitap var mı kontrol edelim
             if (book != null)
                 throw new InvalidOperationException("Girdiğiniz kitap zaten var.");
+
+            
             _bookStoreDbContext.Books.Add(MyCreateModel);
             _bookStoreDbContext.SaveChanges();
         }
@@ -31,14 +33,7 @@ namespace webAPI.ViewModels.GetBooks
 
             public int genreId { get; set; }
 
-            /* public static implicit operator CreateModel(Book model) =>
-                new CreateModel
-                {
-                    bookTitle = model.bookTitle,
-                    bookRelase = model.bookRelase.Date.ToString("dd/MM/yyyy"),
-                    bookPage = model.bookPage,
-                    genreId = model.genreId
-                }; //kullanırız bir ara */
+            
 
             public static implicit operator Book(CreateModel createModel) =>
                 new Book

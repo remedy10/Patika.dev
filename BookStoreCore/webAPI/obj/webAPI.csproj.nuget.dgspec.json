@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\serif\\Documents\\GitHub\\Patika.dev\\BookStoreCore\\webAPI\\webAPI.csproj": {}
+    "C:\\Users\\serif\\Documents\\GitHub\\Patika.dev\\BookStoreCore\\webapi\\webAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\serif\\Documents\\GitHub\\Patika.dev\\BookStoreCore\\webAPI\\webAPI.csproj": {
+    "C:\\Users\\serif\\Documents\\GitHub\\Patika.dev\\BookStoreCore\\webapi\\webAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\serif\\Documents\\GitHub\\Patika.dev\\BookStoreCore\\webAPI\\webAPI.csproj",
+        "projectUniqueName": "C:\\Users\\serif\\Documents\\GitHub\\Patika.dev\\BookStoreCore\\webapi\\webAPI.csproj",
         "projectName": "webAPI",
-        "projectPath": "C:\\Users\\serif\\Documents\\GitHub\\Patika.dev\\BookStoreCore\\webAPI\\webAPI.csproj",
+        "projectPath": "C:\\Users\\serif\\Documents\\GitHub\\Patika.dev\\BookStoreCore\\webapi\\webAPI.csproj",
         "packagesPath": "C:\\Users\\serif\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\serif\\Documents\\GitHub\\Patika.dev\\BookStoreCore\\webAPI\\obj\\",
+        "outputPath": "C:\\Users\\serif\\Documents\\GitHub\\Patika.dev\\BookStoreCore\\webapi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,6 +44,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[10.4.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.3, )"
@@ -51,6 +55,10 @@
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
               "version": "[6.0.3, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

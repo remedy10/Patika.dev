@@ -29,3 +29,5 @@ C:\Users\serif\Documents\GitHub\Patika.dev\BookStoreCore\webAPI\bin\Debug\net6.0
 C:\Users\serif\Documents\GitHub\Patika.dev\BookStoreCore\webAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\serif\Documents\GitHub\Patika.dev\BookStoreCore\webAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\serif\Documents\GitHub\Patika.dev\BookStoreCore\webAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\serif\Documents\GitHub\Patika.dev\BookStoreCore\webAPI\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\serif\Documents\GitHub\Patika.dev\BookStoreCore\webapi\bin\Debug\net6.0\Newtonsoft.Json.dll

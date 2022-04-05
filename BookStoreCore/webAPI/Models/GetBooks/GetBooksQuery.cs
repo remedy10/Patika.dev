@@ -1,7 +1,7 @@
 using webAPI.DBOperations;
 using webAPI.Enums;
 
-namespace webAPI.ViewModels.GetBooks
+namespace webAPI.Models.GetBooks
 {
     public class GetBooksQuery
     {
