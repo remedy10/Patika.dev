@@ -2,9 +2,9 @@ using System.Diagnostics;
 using System.Net;
 using Microsoft.AspNetCore.Builder;
 using Newtonsoft.Json;
-using webapi.Services;
+using webAPI.Services;
 
-namespace webapi.Middlewares
+namespace webAPI.Middlewares
 {
     public class ExceptionMiddleware
     {

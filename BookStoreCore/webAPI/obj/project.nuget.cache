@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vBtvT+Czhh46IcR2XaOVnYWbLMVlbEX95H8SuFs0lSNUlG0SWbQ+LheuD5mAOjBVGyxIDoVWtm4/b8h6zCWY7g==",
+  "dgSpecHash": "K8s9JhLQF94YvT4dJdWeSe0Zc64QH6JA73dB/d2T2SxeC6q0rUS+F96NztJAFHzsqZjaCj07NwPvIljUHkPvIg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\serif\\Documents\\GitHub\\Patika.dev\\BookStoreCore\\webapi\\webAPI.csproj",
+  "projectFilePath": "C:\\Users\\serif\\Documents\\GitHub\\Patika.dev\\BookStoreCore\\webAPI\\webAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\serif\\.nuget\\packages\\fluentvalidation\\10.4.0\\fluentvalidation.10.4.0.nupkg.sha512",
     "C:\\Users\\serif\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.3\\microsoft.entityframeworkcore.6.0.3.nupkg.sha512",

@@ -1,7 +1,9 @@
+
 using webAPI.DBOperations;
+using webAPI.Entities;
 using webAPI.Enums;
 
-namespace webAPI.Models.GetBooks
+namespace webAPI.Applicaton.BookOperations.Queries.GetBooks
 {
     public class GetBooksQuery
     {

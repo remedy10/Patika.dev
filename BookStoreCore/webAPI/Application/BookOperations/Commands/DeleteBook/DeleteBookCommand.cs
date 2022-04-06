@@ -1,13 +1,14 @@
 using webAPI.DBOperations;
+using webAPI.Entities;
 
-namespace webAPI.Models.DeleteBook
+namespace webAPI.Applicaton.BookOperations.Commands.DeleteBook
 {
-    public class DeleteBook
+    public class DeleteBookCommand
     {
         public Book MyBook { get; set; }
         private readonly BookStoreDbContext _bookStoreDbContext;
 
-        public DeleteBook(BookStoreDbContext bookStoreDbContext)
+        public DeleteBookCommand(BookStoreDbContext bookStoreDbContext)
         {
             _bookStoreDbContext = bookStoreDbContext;
         }

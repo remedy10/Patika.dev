@@ -1,6 +1,7 @@
-using webapi.Middlewares;
 
-namespace webapi.Extensions
+using webAPI.Middlewares;
+
+namespace webAPI.Extensions
 {
     public static class ExceptionMiddlewareExtension
     {

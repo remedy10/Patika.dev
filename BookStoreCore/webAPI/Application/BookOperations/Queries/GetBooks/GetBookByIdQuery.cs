@@ -1,13 +1,15 @@
 using webAPI.DBOperations;
+using webAPI.Entities;
 using webAPI.Enums;
 
-namespace webAPI.Models.GetBooks
+
+namespace webAPI.Applicaton.BookOperations.Queries.GetBooks
 {
-    public class getBookById
+    public class GetBookByIdQuery
     {
         private readonly BookStoreDbContext _bookStoreDbContext;
 
-        public getBookById(BookStoreDbContext bookStoreDbContext)
+        public GetBookByIdQuery(BookStoreDbContext bookStoreDbContext)
         {
             _bookStoreDbContext = bookStoreDbContext;
         }

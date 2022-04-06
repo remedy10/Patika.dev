@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using webAPI.Entities;
 
 namespace webAPI.DBOperations
 {
@@ -17,20 +18,31 @@ namespace webAPI.DBOperations
                 {
                     return; // Data was already seeded
                 }
+                context.Genres.AddRange(
+                    new Genre { Name = "nonCategorized" },
+                    new Genre { Name = "Sci-Fi" },
+                    new Genre { Name = "Fantasy" },
+                    new Genre { Name = "Biography" },
+                    new Genre { Name = "AutoBiography" },
+                    new Genre { Name = "Education" },
+                    new Genre { Name = "Detective" },
+                    new Genre { Name = "Action" }
+                    //! Genre ekliyorz 
+                );
                 context.Books.AddRange(
                     new Book
                     {
                         bookTitle = "Lord of the Rings",
                         bookPage = 1100,
                         bookRelase = new DateTime(1972, 1, 1),
-                        genreId = 2 //Fantasy
+                        genreId = 2 //
                     },
                     new Book
                     {
                         bookTitle = "Hobbit",
                         bookPage = 400,
                         bookRelase = new DateTime(1937, 1, 1),
-                        genreId = 2 //Fantasy
+                        genreId = 2
                     },
                     new Book
                     {

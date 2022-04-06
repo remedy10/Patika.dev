@@ -1,9 +1,8 @@
 using FluentValidation;
-using static webAPI.Models.UpdateBook.UpdateBook;
 
-namespace webAPI.Models.UpdateBook
+namespace webAPI.Applicaton.BookOperations.Commands.UpdateBook
 {
-    public class UpdateBookValidator : AbstractValidator<UpdateBook>
+    public class UpdateBookValidator : AbstractValidator<UpdateBookQuery>
     {
         public UpdateBookValidator()
         {

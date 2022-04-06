@@ -1,4 +1,4 @@
-namespace webapi.Services
+namespace webAPI.Services
 {
     public class DbLogger : ILoggerService
     {

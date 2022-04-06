@@ -1,13 +1,13 @@
 using FluentValidation;
 using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
-using webapi.Services;
+using webAPI.Services;
 using webAPI.DBOperations;
-using webAPI.Models.CreateBook;
-using webAPI.Models.DeleteBook;
-using webAPI.Models.GetBooks;
-using webAPI.Models.UpdateBook;
-using static webAPI.Models.CreateBook.CreateBook;
+using webAPI.Applicaton.BookOperations.Queries.GetBooks;
+using static webAPI.Applicaton.BookOperations.Commands.CreateBook.CreateBookCommand;
+using webAPI.Applicaton.BookOperations.Commands.CreateBook;
+using webAPI.Applicaton.BookOperations.Commands.UpdateBook;
+using webAPI.Applicaton.BookOperations.Commands.DeleteBook;
 
 namespace webAPI.Controllers
 {
@@ -36,7 +36,7 @@ namespace webAPI.Controllers
         //! aynı methoda [FromQuery] ile bir param veriyoruz
         public IActionResult getById(int id)
         {
-            getBookById getBookById = new(_context);
+            GetBookByIdQuery getBookById = new(_context);
             var book = getBookById.Handle(id);
             return Ok(book);
         }
@@ -46,7 +46,7 @@ namespace webAPI.Controllers
         [HttpPost]
         public IActionResult addBook([FromBody] CreateModel newBook)
         {
-            CreateBook createBook = new(_context);
+            CreateBookCommand createBook = new(_context);
             createBook.MyCreateModel = newBook;
             CreateBookValidator addValidator = new();
             addValidator.ValidateAndThrow(createBook);
@@ -60,10 +60,10 @@ namespace webAPI.Controllers
 
         #region PUT
         [HttpPut("{id}")]
-        public IActionResult updateBook(int id, [FromBody] UpdateBook.UpdateModel upBook)
+        public IActionResult updateBook(int id, [FromBody] UpdateBookQuery.UpdateModel upBook)
         {
             UpdateBookValidator updateValidator = new();
-            UpdateBook updateBook = new(_context);
+            UpdateBookQuery updateBook = new(_context);
             updateBook.MyModel = upBook;
             updateValidator.ValidateAndThrow(updateBook);
             updateBook.Handle(id);
@@ -76,7 +76,7 @@ namespace webAPI.Controllers
         [HttpDelete("{id}")]
         public IActionResult deleteBook(int id)
         {
-            DeleteBook delete = new(_context);
+            DeleteBookCommand delete = new(_context);
             //DeleteBookValidator deleteValidator = new();
             delete.Handle(id);
             //deleteValidator.ValidateAndThrow(delete);

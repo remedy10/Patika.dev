@@ -1,13 +1,13 @@
 using webAPI.DBOperations;
 
-namespace webAPI.Models.UpdateBook
+namespace webAPI.Applicaton.BookOperations.Commands.UpdateBook
 {
-    public class UpdateBook
+    public class UpdateBookQuery
     {
         public UpdateModel MyModel { get; set; }
         private readonly BookStoreDbContext _bookStoreDbContext;
 
-        public UpdateBook(BookStoreDbContext bookStoreDbContext)
+        public UpdateBookQuery(BookStoreDbContext bookStoreDbContext)
         {
             _bookStoreDbContext = bookStoreDbContext;
         }

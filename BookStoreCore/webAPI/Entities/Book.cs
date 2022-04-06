@@ -1,6 +1,5 @@
 using System.ComponentModel.DataAnnotations.Schema;
-
-namespace webAPI
+namespace webAPI.Entities
 {
     public class Book
     {

@@ -1,13 +1,14 @@
 using webAPI.DBOperations;
+using webAPI.Entities;
 
-namespace webAPI.Models.CreateBook
+namespace webAPI.Applicaton.BookOperations.Commands.CreateBook
 {
-    public class CreateBook
+    public class CreateBookCommand
     {
         public CreateModel MyCreateModel { get; set; }
         public readonly BookStoreDbContext _bookStoreDbContext;
 
-        public CreateBook(BookStoreDbContext bookStoreDbContext)
+        public CreateBookCommand(BookStoreDbContext bookStoreDbContext)
         {
             _bookStoreDbContext = bookStoreDbContext;
         }
