@@ -53,7 +53,7 @@ namespace webAPI.Controllers
             createBook.Handle();
             //! ValidateAndThrow hem doğrular ve hata oluşması durumdan hatayı fırlatır. sadece validate kullanmak
             //! iyi olmaz.
-            //? Artık bütün exceptionlarımız tek yerden geliyor.
+            //? Artık bütün exceptionlarımız tek yerden geliyor.try-catch yazmaya gerek yok  
             return Ok();
         }
         #endregion
