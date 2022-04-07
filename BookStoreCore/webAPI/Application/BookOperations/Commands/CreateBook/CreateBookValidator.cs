@@ -16,9 +16,7 @@ namespace webAPI.Applicaton.BookOperations.Commands.CreateBook
                 .NotEmpty()
                 .LessThan(DateTime.Now.Date)
                 .WithMessage("RelaseDate bugünden küçük olmalıdır.");
-            RuleFor(book => book.MyCreateModel.genreId)
-                .IsInEnum()
-                .WithMessage("Böyle bir Genre yok!");
+            RuleFor(book => book.MyCreateModel.authorId).LessThan(0).WithMessage("0dan küçük");
         }
     }
 }

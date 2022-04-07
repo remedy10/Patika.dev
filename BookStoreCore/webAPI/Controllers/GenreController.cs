@@ -62,10 +62,7 @@ namespace webAPI.Controllers
         public IActionResult DeleteGenre(int id)
         {
             DeleteGenreCommand genreCommand = new(_bookStoreDbContext);
-            genreCommand.MyGenre.Id = id;
-            DeleteGenreValidator genreValidator = new();
-            genreValidator.ValidateAndThrow(genreCommand);
-            genreCommand.Handle();
+            genreCommand.Handle(id);
             return Ok();
         }
     }

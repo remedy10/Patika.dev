@@ -16,7 +16,7 @@ namespace webAPI.Applicaton.BookOperations.Commands.DeleteBook
         public void Handle(int id)
         {
             var book = _bookStoreDbContext.Books.SingleOrDefault(x => x.bookId == id);
-            if (book == null)
+            if (book is null)
                 throw new InvalidOperationException("Bulunamadı");
             _bookStoreDbContext.Books.Remove(book);
             _bookStoreDbContext.SaveChanges();

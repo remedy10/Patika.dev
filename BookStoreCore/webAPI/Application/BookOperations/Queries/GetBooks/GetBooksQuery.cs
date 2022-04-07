@@ -1,7 +1,6 @@
-
+using Microsoft.EntityFrameworkCore;
 using webAPI.DBOperations;
 using webAPI.Entities;
-using webAPI.Enums;
 
 namespace webAPI.Applicaton.BookOperations.Queries.GetBooks
 {
@@ -15,8 +14,12 @@ namespace webAPI.Applicaton.BookOperations.Queries.GetBooks
         }
 
         public List<BooksViewModel> GetQuery()
-        {
-            var bookList = _bookStoreDbContext.Books.OrderBy(x => x.bookId).ToList<Book>();
+        { //Inlucde derken sqldeki join gibi düşün
+            var bookList = _bookStoreDbContext.Books
+                .Include(x => x.Genre)
+                .Include(x => x.Author)
+                .OrderBy(x => x.bookId)
+                .ToList<Book>();
             List<BooksViewModel> vmList = new();
             foreach (var book in bookList)
             {
@@ -26,7 +29,8 @@ namespace webAPI.Applicaton.BookOperations.Queries.GetBooks
                         Title = book.bookTitle,
                         Relase = book.bookRelase.Date.ToString("dd/mm/yyyy"),
                         Page = book.bookPage,
-                        Genre = ((Genres)book.genreId).ToString()
+                        Genre = book.Genre.Name,
+                        Author = book.Author.NameAndSurname
                     }
                 );
             }
@@ -41,8 +45,7 @@ namespace webAPI.Applicaton.BookOperations.Queries.GetBooks
             public int Page { get; set; }
 
             public string Genre { get; set; }
-
-            
+            public string Author { get; set; }
         }
     }
 }

@@ -1,7 +1,6 @@
+using Microsoft.EntityFrameworkCore;
 using webAPI.DBOperations;
 using webAPI.Entities;
-using webAPI.Enums;
-
 
 namespace webAPI.Applicaton.BookOperations.Queries.GetBooks
 {
@@ -17,6 +16,8 @@ namespace webAPI.Applicaton.BookOperations.Queries.GetBooks
         public BooksViewModel Handle(int Id)
         {
             var book = _bookStoreDbContext.Books
+                .Include(x => x.Genre)
+                .Include(x => x.Author)
                 .Where(book => book.bookId == Id)
                 .SingleOrDefault()!;
             if (book == null)
@@ -32,6 +33,7 @@ namespace webAPI.Applicaton.BookOperations.Queries.GetBooks
             public int Page { get; set; }
 
             public string Genre { get; set; }
+            public string Author { get; set; }
 
             public static implicit operator BooksViewModel(Book model) =>
                 new BooksViewModel
@@ -39,7 +41,8 @@ namespace webAPI.Applicaton.BookOperations.Queries.GetBooks
                     Title = model.bookTitle,
                     Relase = model.bookRelase.Date.ToString("dd/MM/yyyy"),
                     Page = model.bookPage,
-                    Genre = ((Genres)model.genreId).ToString()
+                    Genre = model.Genre.Name, //yeni geldi eskisi enumdu
+                    Author = model.Author.NameAndSurname
                 }; //kullanırız bir ara
         }
     }

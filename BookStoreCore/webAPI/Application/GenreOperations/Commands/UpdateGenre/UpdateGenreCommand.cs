@@ -25,7 +25,7 @@ namespace webAPI.Application.GenreOperations.Commands.UpdateGenre
                 )
             )
                 throw new InvalidOperationException("Ayni isimde bir Genre zaten mevcut");
-            tempGenre.Name = UpdateModel.Name.Trim() == default ? UpdateModel.Name : tempGenre.Name;
+            tempGenre.Name = UpdateModel.Name.Trim() != default ? UpdateModel.Name : tempGenre.Name;
             _bookStoreDbContext.SaveChanges();
         }
     }

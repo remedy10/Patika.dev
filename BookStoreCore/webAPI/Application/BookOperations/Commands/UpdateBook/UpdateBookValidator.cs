@@ -7,7 +7,7 @@ namespace webAPI.Applicaton.BookOperations.Commands.UpdateBook
         public UpdateBookValidator()
         {
             RuleFor(x => x.MyModel.bookTitle).NotEmpty().WithMessage("Title boş olamaz!");
-            RuleFor(x => x.MyModel.genreId).IsInEnum().WithMessage("Böyle bir Genre yok!");
+            RuleFor(x => x.MyModel.authorId).LessThanOrEqualTo(0).WithMessage("0dan küçük olamaz");
         }
     }
 }

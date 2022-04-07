@@ -1,6 +1,5 @@
 using webAPI.DBOperations;
 using webAPI.Entities;
-using webAPI.Enums;
 
 namespace webAPI.Application.GenreOperations.Queries.GetGenres
 {

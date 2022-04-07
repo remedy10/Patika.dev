@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using webAPI.DBOperations;
 using webAPI.Entities;
 
@@ -15,13 +16,24 @@ namespace webAPI.Applicaton.BookOperations.Commands.CreateBook
 
         public void Handle()
         {
-            var book = _bookStoreDbContext.Books.SingleOrDefault(
-                x => x.bookTitle == MyCreateModel.bookTitle
-            ); //yeni eklediğimiz kitap var mı kontrol edelim
+            var book = _bookStoreDbContext.Books
+                .Include(x => x.Genre)
+                .Include(x => x.Author)
+                .SingleOrDefault(x => x.bookTitle == MyCreateModel.bookTitle); //yeni eklediğimiz kitap var mı kontrol edelim
             if (book != null)
                 throw new InvalidOperationException("Girdiğiniz kitap zaten var.");
-
-            
+            var checkGenre = _bookStoreDbContext.Genres.SingleOrDefault(
+                x => x.Id == MyCreateModel.genreId
+            );
+            if (checkGenre is null)
+                throw new InvalidOperationException(
+                    "Eşleşen Genre yok.Doğru bir Genre girin veya yeni Genre oluşturun."
+                ); //TODO:Author ekle
+            var checkAuthor = _bookStoreDbContext.Authors.SingleOrDefault(
+                x => x.Id == MyCreateModel.authorId
+            );
+            if (checkAuthor is null)
+                throw new InvalidOperationException("Geçerli bir author id giriniz.");
             _bookStoreDbContext.Books.Add(MyCreateModel);
             _bookStoreDbContext.SaveChanges();
         }
@@ -33,8 +45,7 @@ namespace webAPI.Applicaton.BookOperations.Commands.CreateBook
             public int bookPage { get; set; }
 
             public int genreId { get; set; }
-
-            
+            public int authorId { get; set; }
 
             public static implicit operator Book(CreateModel createModel) =>
                 new Book
@@ -42,7 +53,8 @@ namespace webAPI.Applicaton.BookOperations.Commands.CreateBook
                     bookTitle = createModel.bookTitle,
                     bookRelase = createModel.bookRelase,
                     bookPage = createModel.bookPage,
-                    genreId = createModel.genreId
+                    genreId = createModel.genreId,
+                    AuthorId = createModel.authorId
                 };
         }
     }

@@ -5,8 +5,7 @@ namespace webAPI.Application.GenreOperations.Commands.DeleteGenre
 {
     public class DeleteGenreCommand
     {
-        public Genre MyGenre { get; set; }
-        public int genreID { get; set; }//! gereksiz.
+        public DeleteGenreModel DeleteModel { get; set; }
         private readonly BookStoreDbContext _bookStoreDbContext;
 
         public DeleteGenreCommand(BookStoreDbContext bookStoreDbContext)
@@ -14,17 +13,23 @@ namespace webAPI.Application.GenreOperations.Commands.DeleteGenre
             _bookStoreDbContext = bookStoreDbContext;
         }
 
-        public void Handle()
+        public void Handle(int id)
         {
-            var tempGenre = _bookStoreDbContext.Genres
-                .Where(x => x.Id == MyGenre.Id)
-                .SingleOrDefault();
+            var tempGenre = _bookStoreDbContext.Genres.SingleOrDefault(x => x.Id == id);
             if (tempGenre is null)
                 throw new InvalidOperationException("Genre Bulunamadı!");
             _bookStoreDbContext.Genres.Remove(tempGenre);
             _bookStoreDbContext.SaveChanges();
         }
+
+        public class DeleteGenreModel
+        {
+            public int Id { get; set; }
+            public int Name { get; set; }
+        }
     }
 
     // TODO: Bunu için model oluştumaya gerek duymadım ama gerekirse refactor edebiliriz.
+    // TODO: Validtor kullanmaıyorum artık yıldırdı.ama yinede validatorlü bir çözüm üret
+    // TODO: aslında burada validasyon gereksiz ama
 }
