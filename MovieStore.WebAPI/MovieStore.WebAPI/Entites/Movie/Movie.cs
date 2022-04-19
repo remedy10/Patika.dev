@@ -12,6 +12,6 @@ namespace MovieStore.WebAPI.Entites.Movie
         public Enum? MovieGenre { get; set; }
         public long MoviePrice { get; set; }
         public List<Actor>? Cast { get; set; }
-        public List<Director.Director>? Directors { get; set; }
+        public MovieStore.WebAPI.Entites.Director.Director? Director { get; set; }
     }
 }

@@ -5,9 +5,9 @@ namespace webAPI.Application.AuthorOperations.Queries.GetAuthors
 {
     public class GetAuthorByIdQuery
     {
-        private readonly BookStoreDbContext _dbContext;
+        private readonly IBookStoreDbContext _dbContext;
 
-        public GetAuthorByIdQuery(BookStoreDbContext dbContext)
+        public GetAuthorByIdQuery(IBookStoreDbContext dbContext)
         {
             _dbContext = dbContext;
         }

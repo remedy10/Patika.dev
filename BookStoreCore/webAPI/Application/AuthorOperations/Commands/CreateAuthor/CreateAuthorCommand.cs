@@ -6,17 +6,21 @@ namespace webAPI.Application.AuthorOperations.Commands.CreateAuthor
     public class CreateAuthorCommand
     {
         public CreateAuthorModel MyCreateModel { get; set; }
-        private readonly BookStoreDbContext _dbContext;
+        private readonly IBookStoreDbContext _dbContext;
 
-        public CreateAuthorCommand(BookStoreDbContext dbContext)
+        public CreateAuthorCommand(IBookStoreDbContext dbContext)
         {
             _dbContext = dbContext;
         }
 
         public void Handle()
         {
-            //TODO: IsExist kontrolünde case sens.'e dikkat et  bir türlü yapamadın! 
-            var x=_dbContext.Authors.Where(x=>x.NameAndSurname.Trim().ToLower()==MyCreateModel.NameAndSurname.Trim().ToLower());
+            //TODO: IsExist kontrolünde case sens.'e dikkat et  bir türlü yapamadın!
+            var x = _dbContext.Authors.Where(
+                x =>
+                    x.NameAndSurname.Trim().ToLower()
+                    == MyCreateModel.NameAndSurname.Trim().ToLower()
+            );
             var checkAuthor = _dbContext.Authors
                 .Where(
                     x =>

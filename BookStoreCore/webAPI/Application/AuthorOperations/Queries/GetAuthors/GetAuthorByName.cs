@@ -8,9 +8,9 @@ namespace webAPI.Application.AuthorOperations.Queries.GetAuthors
         //! Ekstra xD
         //! istediğim gibi olmadı sonra tekrar bakcağım şimdilik devre dışı
         //TODO: Boşluklarda ve eksiklerde çalışmıyor yapacaksan iyi birşeyler yap 
-        private readonly BookStoreDbContext _dbContext;
+        private readonly IBookStoreDbContext _dbContext;
 
-        public GetAuthorByName(BookStoreDbContext dbContext)
+        public GetAuthorByName(IBookStoreDbContext dbContext)
         {
             _dbContext = dbContext;
         }

@@ -5,9 +5,9 @@ namespace webAPI.Application.AuthorOperations.Commands.UpdateAuthor
     public class UpdateAuthorCommand
     {
         public AuthorUpdateModel MyModel { get; set; }
-        private readonly BookStoreDbContext _dbContext;
+        private readonly IBookStoreDbContext _dbContext;
 
-        public UpdateAuthorCommand(BookStoreDbContext dbContext)
+        public UpdateAuthorCommand(IBookStoreDbContext dbContext)
         {
             _dbContext = dbContext;
         }

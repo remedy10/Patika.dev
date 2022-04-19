@@ -6,9 +6,9 @@ namespace webAPI.Applicaton.BookOperations.Commands.UpdateBook
     public class UpdateBookQuery
     {
         public UpdateModel MyModel { get; set; }
-        private readonly BookStoreDbContext _bookStoreDbContext;
+        private readonly IBookStoreDbContext _bookStoreDbContext;
 
-        public UpdateBookQuery(BookStoreDbContext bookStoreDbContext)
+        public UpdateBookQuery(IBookStoreDbContext bookStoreDbContext)
         {
             _bookStoreDbContext = bookStoreDbContext;
         }

@@ -1,23 +1,23 @@
 using FluentValidation;
-using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
-using webAPI.Services;
 using webAPI.DBOperations;
 using webAPI.Applicaton.BookOperations.Queries.GetBooks;
 using static webAPI.Applicaton.BookOperations.Commands.CreateBook.CreateBookCommand;
 using webAPI.Applicaton.BookOperations.Commands.CreateBook;
 using webAPI.Applicaton.BookOperations.Commands.UpdateBook;
 using webAPI.Applicaton.BookOperations.Commands.DeleteBook;
+using Microsoft.AspNetCore.Authorization;
 
 namespace webAPI.Controllers
-{
+{   
+    [Authorize]
     [ApiController]
     [Route("[Controller]s")]
     public class BookController : ControllerBase
     {
-        private readonly BookStoreDbContext _context;
+        private readonly IBookStoreDbContext _context;
         
-        public BookController(BookStoreDbContext context) //dependency injection ıoc containerden context'i istiyoruz.
+        public BookController(IBookStoreDbContext context) //dependency injection ıoc containerden context'i istiyoruz.
         {
             _context = context;
         }

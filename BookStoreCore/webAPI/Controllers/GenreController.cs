@@ -1,4 +1,5 @@
 using FluentValidation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using webAPI.Application.GenreOperations.Commands.CreateGenre;
 using webAPI.Application.GenreOperations.Commands.DeleteGenre;
@@ -7,14 +8,14 @@ using webAPI.Application.GenreOperations.Queries.GetGenres;
 using webAPI.DBOperations;
 
 namespace webAPI.Controllers
-{
+{[Authorize]
     [ApiController]
     [Route("[Controller]s")]
     public class GenreController : ControllerBase
     {
-        private readonly BookStoreDbContext _bookStoreDbContext;
+        private readonly IBookStoreDbContext _bookStoreDbContext;
 
-        public GenreController(BookStoreDbContext bookStoreDbContext)
+        public GenreController(IBookStoreDbContext bookStoreDbContext)
         {
             _bookStoreDbContext = bookStoreDbContext;
         }

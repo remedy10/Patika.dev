@@ -1,4 +1,5 @@
 using FluentValidation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using webAPI.Application.AuthorOperations.Commands.CreateAuthor;
 using webAPI.Application.AuthorOperations.Commands.DeleteAuthor;
@@ -9,13 +10,14 @@ using webAPI.DBOperations;
 
 namespace webAPI.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("[Controller]s")]
     public class AuthorController : ControllerBase
     {
-        private readonly BookStoreDbContext _context;
+        private readonly IBookStoreDbContext _context;
 
-        public AuthorController(BookStoreDbContext context)
+        public AuthorController(IBookStoreDbContext context)
         {
             _context = context;
         }

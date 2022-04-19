@@ -3,11 +3,12 @@ using webAPI.Entities;
 
 namespace webAPI.Application.AuthorOperations.Queries.GetAuthors
 {
+
     public class GetAuthorsQuery
     {
-        private readonly BookStoreDbContext _dbContext;
+        private readonly IBookStoreDbContext _dbContext;
 
-        public GetAuthorsQuery(BookStoreDbContext dbContext)
+        public GetAuthorsQuery(IBookStoreDbContext dbContext)
         {
             _dbContext = dbContext;
         }

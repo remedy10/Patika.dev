@@ -6,9 +6,9 @@ namespace webAPI.Applicaton.BookOperations.Queries.GetBooks
 {
     public class GetBooksQuery
     {
-        public readonly BookStoreDbContext _bookStoreDbContext;
+        public readonly IBookStoreDbContext _bookStoreDbContext;
 
-        public GetBooksQuery(BookStoreDbContext bookStoreDbContext)
+        public GetBooksQuery(IBookStoreDbContext bookStoreDbContext)
         {
             _bookStoreDbContext = bookStoreDbContext;
         }

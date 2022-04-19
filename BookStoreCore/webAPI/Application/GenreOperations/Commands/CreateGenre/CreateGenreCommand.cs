@@ -6,9 +6,9 @@ namespace webAPI.Application.GenreOperations.Commands.CreateGenre
     public class CreateGenreCommand
     {
         public CreateGenreModel MyCreateModel { get; set; }
-        private readonly BookStoreDbContext _bookStoreDbContext;
+        private readonly IBookStoreDbContext _bookStoreDbContext;
 
-        public CreateGenreCommand(BookStoreDbContext bookStoreDbContext)
+        public CreateGenreCommand(IBookStoreDbContext bookStoreDbContext)
         {
             _bookStoreDbContext = bookStoreDbContext;
         }
