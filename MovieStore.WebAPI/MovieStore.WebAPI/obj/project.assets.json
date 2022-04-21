@@ -38,6 +38,18 @@
           "lib/netstandard2.0/_._": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.InMemory/6.0.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.4"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll": {}
+        }
+      },
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
         "type": "package",
         "build": {
@@ -306,6 +318,20 @@
         "lib/netstandard2.0/_._",
         "microsoft.entityframeworkcore.analyzers.6.0.3.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.InMemory/6.0.4": {
+      "sha512": "yGwrb5Z6siJxvHhLv8yfouVkNV/YlcFrxaH1x9zap4/LtnctCIozLkWtgJHovDSYHVZm0yAkFtOMgl9rVm9Xsg==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.inmemory/6.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.xml",
+        "microsoft.entityframeworkcore.inmemory.6.0.4.nupkg.sha512",
+        "microsoft.entityframeworkcore.inmemory.nuspec"
       ]
     },
     "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
@@ -717,28 +743,24 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.EntityFrameworkCore >= 6.0.3",
+      "Microsoft.EntityFrameworkCore.InMemory >= 6.0.4",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\serif\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\serif\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\serif\\Documents\\GitHub\\Patika.dev\\MovieStore.WebAPI\\MovieStore.WebAPI\\MovieStore.WebAPI.csproj",
+      "projectUniqueName": "c:\\Users\\serif\\Documents\\GitHub\\Patika.dev\\MovieStore.WebAPI\\MovieStore.WebAPI\\MovieStore.WebAPI.csproj",
       "projectName": "MovieStore.WebAPI",
-      "projectPath": "C:\\Users\\serif\\Documents\\GitHub\\Patika.dev\\MovieStore.WebAPI\\MovieStore.WebAPI\\MovieStore.WebAPI.csproj",
+      "projectPath": "c:\\Users\\serif\\Documents\\GitHub\\Patika.dev\\MovieStore.WebAPI\\MovieStore.WebAPI\\MovieStore.WebAPI.csproj",
       "packagesPath": "C:\\Users\\serif\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\serif\\Documents\\GitHub\\Patika.dev\\MovieStore.WebAPI\\MovieStore.WebAPI\\obj\\",
+      "outputPath": "c:\\Users\\serif\\Documents\\GitHub\\Patika.dev\\MovieStore.WebAPI\\MovieStore.WebAPI\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
         "C:\\Users\\serif\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -768,6 +790,10 @@
             "target": "Package",
             "version": "[6.0.3, )"
           },
+          "Microsoft.EntityFrameworkCore.InMemory": {
+            "target": "Package",
+            "version": "[6.0.4, )"
+          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.2.3, )"
@@ -791,8 +817,19 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Detected package downgrade: Microsoft.EntityFrameworkCore from 6.0.4 to 6.0.3. Reference the package directly from the project to select a different version. \r\n MovieStore.WebAPI -> Microsoft.EntityFrameworkCore.InMemory 6.0.4 -> Microsoft.EntityFrameworkCore (>= 6.0.4) \r\n MovieStore.WebAPI -> Microsoft.EntityFrameworkCore (>= 6.0.3)",
+      "libraryId": "Microsoft.EntityFrameworkCore",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }
