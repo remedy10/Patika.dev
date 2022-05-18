@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Üye olun</title>
+</head>
+<body>
+  <table border="1" cellpadding="10">
+    <form action="#" method="post">
+      <thead>
+        <tr>
+          <td colspan="2"><h2>HESAP BİLGİLERİNİZ</h2></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><label for="uname">Kullanıcı Adı:</label></td>
+          <td>
+            <input
+            type="username"
+            id="uname"
+            placeholder="Kullanıcı Adınız"
+            /></td>
+          </tr>
+          <tr>
+            <td><label for="uemail">Eposta:</label></td>
+            <td>
+              <input type="email" id="uemial" placeholder="Eposta Adresiniz" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="upass">Şifreniz:</label></td>
+            <td><input type="password" id="upass" placeholder="Şifreniz" /></td>
+          </tr>
+          <thead>
+            <tr>
+              <td colspan="2"><h2>KİŞİSEL BİLGİLERİNİZ</h2></td>
+            </tr>
+          </thead>
+          <tr>
+            <td><label for="name">Adınız:</label></td>
+            <td><input type="text" id="name" placeholder="Adınız" /></td>
+          </tr>
+          <tr>
+            <td><label for="surname">Soyadınız:</label></td>
+            <td><input type="text" id="surname" placeholder="Soyadınız:" /></td>
+          </tr>   
+          <tr>
+            <td><label for="city">Şehir:</label></td>
+            <td>
+              <select id="city">
+                <option value="35">İZMİR</option>
+                <option value="34">İSTANBUL</option>
+                <option value="06">ANKARA</option>
+                <option value="45">MANİSA</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="sex">Cinsiyet</label></td>
+            <td>
+              <input type="radio" id="sex" name="gender" value="male" />Erkek
+              <input type="radio" id="sex" name="gender" value="female" />Kadın
+              <input type="radio" id="sex" name="gender" value="other" />Diğer
+            </td>
+          </tr>
+          <tr>
+            <td><label for="_submit">Gönder</label></td>
+            <td><button type="submit" id="_submit">Gönder</button></td>
+          </tr>
+        </tbody>
+      </form>
+    </table>
+  </body>
+  </html>
