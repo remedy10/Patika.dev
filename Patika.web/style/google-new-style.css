@@ -1,0 +1,96 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+header a {
+  text-decoration: none;
+  color: gray;
+}
+header a:hover {
+  text-decoration: underline;
+  color: gray;
+}
+footer{
+  margin: 10px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+footer a {
+  text-decoration: none;
+  color: gray;
+  font-size: small;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: gray;
+}
+header input[type="button"] {
+  padding: 7px;
+  margin: 5px;
+  border: 0px;
+  background-color: #4285f4;
+  color: white;
+  font-weight: bold;
+  border-radius: 3px;
+}
+.left-side {
+  display: inline-block;
+  margin: 10px;
+}
+.right-side {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  margin: 10px;
+}
+.right-side > a {
+  font-size: 18px;
+}
+.main-image {
+  text-align: center;
+  padding-top: 120px;
+}
+.main-elements {
+  text-align: center;
+}
+input[type="text"] {
+  width: 500px;
+  background-color: white;
+  margin: auto;
+  height: 25px;
+  border-radius: 50px;
+  text-align: center;
+}
+.textbox i {
+  position: absolute; /*textboxun içine alan dalga bu */
+}
+input[type="text"]:hover {
+  box-shadow: 5px 5px 5px grey;
+}
+.textbox {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.icon {
+  padding: 7px;
+  min-width: 20px;
+  color: gray;
+  /*icon ile ilgili ayarlar renk vs.*/
+}
+.buttons > input[type="button"] {
+  background-color: whitesmoke;
+  padding: 10px;
+  border: 0px;
+  color: gray;
+}
+.buttons > input[type="button"]:hover {
+  border: 1px solid gray;
+  border-radius: 5px;
+  color: black;
+}
+.font-small>a{
+  font-size: small;
+  padding-right: 50px;
+}
