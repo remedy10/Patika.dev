@@ -1,0 +1,44 @@
+ body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 0px auto;
+  text-align: center;
+  width: auto;
+  padding: auto;
+}
+.img-box {
+  margin: 5px auto;
+}
+.input-box {
+  width: 400px;
+}
+.text-box {
+  margin: 0px auto;
+  width: inherit;
+}
+.bottom-box{
+
+}
+.card{
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    vertical-align: top;
+    height: 78px;
+    
+}
+.card>p{
+    margin: 0px;
+    padding: 0px;
+}
+.card>ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+.card-font-size-small{
+    font-size: small;
+}

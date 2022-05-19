@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container {
+  background-color: cadetblue;
+  width: 1000px;
+  margin: 50px auto; /*x ekseni sıfır y eksini auto*/
+}
+.left-bar {
+  background-color: aquamarine;
+  width: 200px;
+  height: 800px;
+  float: left;
+}
+.list-style-none {
+  list-style: none;
+}
+.content {
+    width: 800px;
+    float: left;
+    background-color: blueviolet;
+    height: 800px;
+}
+.card {
+  background-color: brown;
+  width: 20%;
+  height: 250px;
+  float: left;
+  margin: 10px 2%;
+  padding: 2%;
+  border-radius: 20%;
+  
+}
