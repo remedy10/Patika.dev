@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <style>
+      .gradient {
+        background: linear-gradient(
+          90deg,
+          rgba(45, 156, 219, 0.6),
+          rgba(155, 81, 224, 0.6)
+        );
+      }
+      .craousel {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-white flex-items-center py-2 text-center"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="img/kodluyoruz-logo.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- carousel -start -->
+      <div class="container-fluid mb-5">
+        <div class="row d-xs-block">
+          <div
+            id="carouselExampleCaptions"
+            class="carousel"
+            data-bs-ride="false"
+          >
+            <div class="carousel-indicators"></div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://picsum.photos/id/237/1920/600"
+                  class="w-100 text-center d-block"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Hayalindeki yazılım kariyerine ilk adımı at</h5>
+                  <p>
+                    ürkiye'yi teknolojide bir yetenek merkezi yapmak için
+                    gençlere ihtiyaçları olan eğitimi sağlıyoruz.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- carousel -end -->
+
+      <!-- Article 1 - start -->
+      <div class="container mt-5">
+        <div class="row text-center">
+          <!-- article 1 header - start -->
+          <div class="col-md-10 offset-md-1 mt-3">
+            <div class="row">
+              <h2>Kodluyoruz nasil calisir?</h2>
+            </div>
+            <!-- article 1 header - end -->
+            <!-- article 1 image - start -->
+            <div class="row mt-3">
+              <div class="col-md-4">
+                <img
+                  src="https://cdn.sanity.io/images/9kdepi1d/production/294d797750d6b6b1a0e00fa8ab122997db92549e-863x574.svg?w=160&h=106&fit=crop&fm=webp"
+                  alt=""
+                  class="mt-5"
+                />
+              </div>
+              <div class="col-md-4">
+                <img
+                  src="https://cdn.sanity.io/images/9kdepi1d/production/6a5ed2a57036cbd99732311d8558882d2eaa6717-1088x826.svg?w=160&h=121&fit=crop&fm=webp"
+                  alt=""
+                  class="mt-5"
+                />
+              </div>
+              <div class="col-md-4">
+                <img
+                  src="https://cdn.sanity.io/images/9kdepi1d/production/a0d5d919e567c1ca122529eea4a6350ac2997198-926x749.svg?w=160&h=129&fit=crop&fm=webp"
+                  alt=""
+                  class="mt-5"
+                />
+              </div>
+            </div>
+            <!-- article 1 image - end -->
+            <!-- Title - start -->
+            <div class="row">
+              <div class="col-md-4">
+                <h4 class="mt-5">Becerilerini Geliştir</h4>
+              </div>
+              <div class="col-md-4">
+                <h4 class="mt-5">Mezunlar Kulübü'ne Katıl</h4>
+              </div>
+              <div class="col-md-4">
+                <h4 class="mt-5">Şirketlerle Buluş</h4>
+              </div>
+            </div>
+            <!-- Tittle - end -->
+            <!-- Subtitle - start -->
+            <div class="row mt-0">
+              <div class="col-md-4">
+                <h2 class="fw-light fs-4">
+                  <p>
+                    Ücretsiz bootcamp'lere katıl ve dünya çapındaki kaynaklarla
+                    becerilerini geliştir
+                  </p>
+                </h2>
+              </div>
+              <div class="col-md-4">
+                <h2 class="fw-light fs-4">
+                  <p>
+                    Bootcamp'lerden başarıyla mezun ol, diğer mezunlarla hayat
+                    boyu öğrenmek için bir araya gel
+                  </p>
+                </h2>
+              </div>
+              <div class="col-md-4">
+                <h2 class="fw-light fs-4">
+                  <p>
+                    Hayalindeki kariyere adım atmak isteyen mezunlarımız için
+                    sağladığımız desteklerden yararlan
+                  </p>
+                </h2>
+              </div>
+            </div>
+            <!-- Subtitle - end -->
+            <!-- Buttons - start  -->
+            <div class="row mt-0">
+              <div class="col-md-4">
+                <button type="button" class="btn btn-primary">Basvur</button>
+              </div>
+              <div class="col-md-4">
+                <button type="button" class="btn btn-primary">
+                  Kulup hakkinda
+                </button>
+              </div>
+              <div class="col-md-4">
+                <button type="button" class="btn btn-primary">
+                  Sirketlerle calismalarimiz
+                </button>
+              </div>
+            </div>
+            <!-- Buttons - end  -->
+          </div>
+        </div>
+      </div>
+      <!-- Article 1 - end -->
+      <!-- article mobile - start -->
+<!-- buraya mobile görünüm yazılacak  -->
+      <!-- article mobile - end -->
+      <div class="container-fluid mt-5 gradient text-center text-white">
+        <div class="row mt-5 p-5">
+          <h2>Açık kaynaklarımız burada!</h2>
+        </div>
+        <div class="row mt-3">
+          <p>
+            Israrlara dayanamadık, iyi bir teknoloji kariyerine hazırlanmak
+            isteyenler <br />için ücretsiz ve online kaynaklar oluşturduk.
+            Patikalarımızda sizleri bekliyoruz!
+          </p>
+        </div>
+        <div class="row"></div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
