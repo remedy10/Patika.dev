@@ -1,0 +1,15 @@
+/home/serif/Documents/Github-Clone-Repos/Patika.dev/Patika.dev CSharp/Array/obj/Debug/net6.0/Array.csproj.AssemblyReference.cache
+/home/serif/Documents/Github-Clone-Repos/Patika.dev/Patika.dev CSharp/Array/obj/Debug/net6.0/Array.GeneratedMSBuildEditorConfig.editorconfig
+/home/serif/Documents/Github-Clone-Repos/Patika.dev/Patika.dev CSharp/Array/obj/Debug/net6.0/Array.AssemblyInfoInputs.cache
+/home/serif/Documents/Github-Clone-Repos/Patika.dev/Patika.dev CSharp/Array/obj/Debug/net6.0/Array.AssemblyInfo.cs
+/home/serif/Documents/Github-Clone-Repos/Patika.dev/Patika.dev CSharp/Array/obj/Debug/net6.0/Array.csproj.CoreCompileInputs.cache
+/home/serif/Documents/Github-Clone-Repos/Patika.dev/Patika.dev CSharp/Array/bin/Debug/net6.0/Array
+/home/serif/Documents/Github-Clone-Repos/Patika.dev/Patika.dev CSharp/Array/bin/Debug/net6.0/Array.deps.json
+/home/serif/Documents/Github-Clone-Repos/Patika.dev/Patika.dev CSharp/Array/bin/Debug/net6.0/Array.runtimeconfig.json
+/home/serif/Documents/Github-Clone-Repos/Patika.dev/Patika.dev CSharp/Array/bin/Debug/net6.0/Array.dll
+/home/serif/Documents/Github-Clone-Repos/Patika.dev/Patika.dev CSharp/Array/bin/Debug/net6.0/ref/Array.dll
+/home/serif/Documents/Github-Clone-Repos/Patika.dev/Patika.dev CSharp/Array/bin/Debug/net6.0/Array.pdb
+/home/serif/Documents/Github-Clone-Repos/Patika.dev/Patika.dev CSharp/Array/obj/Debug/net6.0/Array.dll
+/home/serif/Documents/Github-Clone-Repos/Patika.dev/Patika.dev CSharp/Array/obj/Debug/net6.0/ref/Array.dll
+/home/serif/Documents/Github-Clone-Repos/Patika.dev/Patika.dev CSharp/Array/obj/Debug/net6.0/Array.pdb
+/home/serif/Documents/Github-Clone-Repos/Patika.dev/Patika.dev CSharp/Array/obj/Debug/net6.0/Array.genruntimeconfig.cache

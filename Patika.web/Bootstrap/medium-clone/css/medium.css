@@ -1,0 +1,35 @@
+.bg-color-yellow{
+    background-color: rgb(255, 192, 23);
+}
+.border-bottom-dark{
+    border-bottom: solid 1px black;
+}
+.font-family-serif-pt{
+    font-family: 'PT Serif', serif;
+}
+.button-width-200{
+    width: 200px;
+}
+.text-color-dark{
+    color: black;
+}
+.text-color-gray{
+    color:gray
+}
+.font-size-xsmall{
+    font-size: x-small;
+}
+.font-size-small{
+    font-size: small;
+}
+a{
+    text-decoration: none;
+    /*or trending*/
+}
+
+.border-bottom-gray{
+    border-bottom: solid 1px gray;
+}
+.card-border-none{
+    border: none;
+}

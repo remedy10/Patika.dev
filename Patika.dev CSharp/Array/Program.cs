@@ -107,7 +107,7 @@ Last Element: 1994569*/
 
 #endregion
 #region HackerRank Migratory Birds
-Console.WriteLine("Enter array dimension(count);");
+/* Console.WriteLine("Enter array dimension(count);");
 int countofList=int.Parse(Console.ReadLine());
 List<int> birds=Console.ReadLine().TrimEnd().Split(' ').ToList().Select(temp=>int.Parse(temp)).ToList();
 
@@ -135,6 +135,22 @@ int migratoryBirds(List<int> arr)
         return maxType;
     }
 Console.WriteLine("{0}",migratoryBirds(birds));
-
+ */
 #endregion
 Console.WriteLine("xxxXXXxxx");
+#region  Vovels
+ static string VowelCount(string str) {
+    int strLen=str.Length;
+    int countOfVovels=0;
+    for(int i=0; i<strLen; i++)
+    {  
+      if(str[i]=='a' || str[i]=='e' || str[i]=='i' || str[i]=='o' || str[i]=='u')
+      {
+        countOfVovels++;
+      }
+    } 
+    return str+" kelimesinde "+countOfVovels+" adet sesli vardir.";
+  }
+    Console.WriteLine(VowelCount(Console.ReadLine()!));
+  
+#endregion
