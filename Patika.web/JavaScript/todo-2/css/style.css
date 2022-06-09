@@ -1,0 +1,7 @@
+a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+.alert:hover{
+   background-color: gray;
+}
